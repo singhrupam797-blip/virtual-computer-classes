@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 
 const classroomPhotos = [
-  "/classroom/classroom-1.jpeg",
-  "/classroom/classroom-2.jpg",
+  "/classroom/classroom-1.jpg",
+  "/classroom/classroom-2.jpeg",
   "/classroom/classroom-3.jpg",
   "/classroom/classroom-4.jpeg",
 ];
@@ -834,38 +834,35 @@ export default function Home() {
       </section>
 
       {/* INSTRUCTOR */}
+      
+      {/* INSTRUCTOR */}
       <section className="bg-white px-5 py-20 md:px-10">
         <div className="mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-[260px_1fr]">
 
-          <div className="flex h-64 items-center justify-center overflow-hidden rounded-xl bg-[#EAF0F8] text-center">
-            <div>
-              <img
-                src="/faculty/rupam-singh.jpg"
-                alt="Rupam Singh"
-                className="hidden h-full w-full object-cover"
-                onError={(event) => {
-                  event.currentTarget.style.display = "none";
-                }}
-              />
-              <p className="text-5xl font-black text-[#D7A943]">RS</p>
-              <p className="mt-3 text-xs font-bold tracking-widest text-[#102B55]">
-                YOUR INSTRUCTOR
-              </p>
-            </div>
+          <div className="h-80 w-full overflow-hidden rounded-xl bg-[#EAF0F8] shadow-lg">
+            <img
+              src="/faculty/rupam-singh.jpg"
+              alt="Rupam Singh - Instructor"
+              className="h-full w-full object-cover object-center"
+            />
           </div>
 
           <div>
             <p className="section-label">Meet Your Instructor</p>
             <div className="gold-line mt-3" />
+
             <h2 className="mt-5 text-3xl font-black text-[#102B55] md:text-4xl">
               Learn with Personal Guidance.
             </h2>
+
             <h3 className="mt-5 text-xl font-black text-[#A77D28]">
               Rupam Singh
             </h3>
+
             <p className="mt-2 text-sm font-bold text-slate-500">
               BCA · MDCA
             </p>
+
             <p className="mt-4 max-w-2xl text-sm leading-8 text-slate-600">
               Focused on practical computer education, programming and
               professional skill development. Helping students strengthen
@@ -873,8 +870,10 @@ export default function Home() {
               and regular guidance.
             </p>
           </div>
+
         </div>
       </section>
+
 
       {/* FINAL CTA */}
       <section className="bg-[#102746] px-5 py-20 text-white md:px-10">
